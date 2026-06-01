@@ -23,17 +23,17 @@ docker run --rm \
   -e ODOO_PASSWORD=change-me \
   -e ODOO_HOST=odoo \
   -e ODOO_PORT=8069 \
-  ghcr.io/OWNER/REPOSITORY:latest
+  ghcr.io/cocochristmas/odoo-mailer:latest
 ```
 
-Replace `OWNER/REPOSITORY` with the GitHub repository path where this image is published.
+The image is published from the `cocochristmas/odoo-mailer` GitHub repository.
 
 ## Docker Compose
 
 ```yaml
 services:
   odoo-mailer:
-    image: ghcr.io/OWNER/REPOSITORY:latest
+    image: ghcr.io/cocochristmas/odoo-mailer:latest
     restart: unless-stopped
     ports:
       - "25:25"
@@ -82,7 +82,7 @@ Images are published on pushes to `main`, version tags such as `v1.0.0`, and pul
 The published image name is:
 
 ```text
-ghcr.io/<owner>/<repository>
+ghcr.io/cocochristmas/odoo-mailer
 ```
 
 ## License
