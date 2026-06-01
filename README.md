@@ -87,4 +87,4 @@ ghcr.io/<owner>/<repository>
 
 ## License
 
-This project is distributed under the license declared by the repository.
+This project is licensed under the [MIT License](LICENSE).
