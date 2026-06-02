@@ -24,7 +24,7 @@ All notable changes to this project will be documented in this file.
 - Reworked the Dockerfile to follow cleaner Dockerfile practices and remove duplicated content.
 - Moved embedded shell scripts out of the Dockerfile for easier review and maintenance.
 - Switched the Odoo mailgate download from a moving Odoo version branch to a pinned Odoo commit through `ODOO_REF`.
-- Updated image examples to use `ghcr.io/cocochristmas/odoo-mailer`.
+- Updated image examples to use `ghcr.io/kolbeo/odoo-mailer`.
 - Changed raw email debug logging so it no longer writes to the Postfix pipe command output.
 - Changed debug logs to use `/var/log/odoo-mailer/raw-email.log` and `/var/log/odoo-mailer/mailgate.log`.
 - Made the Postfix healthcheck silent to avoid repeated status messages in Docker logs.
@@ -37,7 +37,7 @@ All notable changes to this project will be documented in this file.
 - Fixed missing Docker log visibility for raw email debugging by forwarding dedicated log files with `tail -F`.
 - Fixed missing Docker log visibility for Odoo mailgate debug output when `ODOO_DEBUG=true`.
 - Fixed noisy recurring healthcheck logs from `postfix status`.
-- Fixed README placeholders by replacing generic image names with the `cocochristmas/odoo-mailer` GHCR image path.
+- Fixed README placeholders by replacing generic image names with the `kolbeo/odoo-mailer` GHCR image path.
 
 ### Security
 
@@ -68,8 +68,8 @@ Initial stable release of Odoo Mailer.
 ### Docker image
 
 ```text
-ghcr.io/cocochristmas/odoo-mailer:1.0.0
-ghcr.io/cocochristmas/odoo-mailer:latest
+ghcr.io/kolbeo/odoo-mailer:1.0.0
+ghcr.io/kolbeo/odoo-mailer:latest
 ```
 
 ### Notes
